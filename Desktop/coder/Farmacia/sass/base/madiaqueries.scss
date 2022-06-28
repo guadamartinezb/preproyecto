@@ -1,0 +1,208 @@
+/*desktop*/
+@media (min-width:1024px) {
+    main {
+        .navbar {
+            display: none;
+        }
+
+        .nav {
+            display: flex;
+        }
+    }
+}
+
+
+/*tablet*/
+@media(min-width:481px) and (max-width:1023px) {
+    .backprincipal {
+        margin-left: 3px;
+        font-size: 40px;
+        }
+
+    a {
+        font-size: x-large;
+        text-align: justify;
+        text-decoration: none;
+        margin: 3px 9px 14px 3px;
+        padding: 10px 12px 10px 30px;
+        justify-content: space-around;
+
+    }
+
+    .mapayform {
+        display: grid;
+        grid-template-areas: 
+        "titulo1"
+        "mapa"
+        "titulo2"
+        "formulario";
+        justify-content: center;
+
+        .mapa {
+            width: 100%;
+            padding-left: 3px;
+
+        }
+
+        .row {
+            padding-left: 4px;
+            padding-top: 4px;
+            grid-area: formulario;
+
+        }
+    }
+
+    .maquillajesback {
+        margin: 15px;
+    }
+
+    #back {
+        h1.titulocp {
+            font-size: 30px;
+
+        }
+    }
+
+    main {
+        .navbar {
+            display: none;
+        }
+
+        .nav {
+            display: flex;
+        }
+    }
+
+}
+
+/*smartphone*/
+@media (max-width:480px) {
+
+    .navp {
+        a {
+            font-size: large;
+            text-align: justify;
+            margin: 3px;
+            padding: 10px;
+
+        }
+    }
+
+    .menu {
+        text-align: left;
+        grid-area: menu;
+        display: flex;
+        justify-content: none;
+        width: 30px;
+        height: 50px
+    }
+
+    head {
+        font-weight: 25px;
+        text-align: center;
+    }
+
+
+    body {
+        font-weight: 10px;
+        text-align: center;
+    }
+
+    .backprincipal {
+        font-size: 50px;
+        background-image: none;
+        height: 100%;
+        background-image: none;
+
+    }
+
+    .novedades {
+        font-size: 30px;
+        grid-area: novedades;
+    }
+
+    .novedades2 {
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        width: 150px;
+        height: 100px;
+        display: inline-table;
+
+    }
+
+    .mapayform {
+        display: grid;
+        grid-template-areas: 
+        "titulo1"
+        "mapa"
+        "titulo2"
+        "formulario";
+        justify-content: center;
+
+        .mapa {
+            width: 100%;
+            padding-left: 3px;
+
+        }
+
+        .row {
+            padding-left: 4px;
+            padding-top: 4px;
+        }
+    }
+
+
+    .maquillajesback {
+        margin: 10px;
+        font-size: 30px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+    }
+
+    .maquillajesc {
+        padding-left: 6px;
+        margin: 4px;
+        width: 250px;
+        height: 300px;
+        border: solid 3px beige;
+        text-align: center;
+        border-radius: 50px;
+
+    }
+
+    .divv {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        grid-area: div;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-around;
+
+    }
+
+    h1.titulocp {
+        font-size: 20px;
+
+    }
+
+    main {
+
+        .navbar {
+            display: flex;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        .navbar-brand {
+            display: none;
+            color: rgb(122, 122, 216);
+            font-size: 10px;
+        }
+    }
+
+}

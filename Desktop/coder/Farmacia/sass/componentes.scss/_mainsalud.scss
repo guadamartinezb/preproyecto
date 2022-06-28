@@ -1,0 +1,18 @@
+main {
+    .navpp {
+        @extend .navp;
+
+        a {
+           @extend .nav-link;
+        }
+    }
+
+    div {
+        .productosalud {
+            @extend  .maquillajesc ;
+            @include card(250px,370px);
+            background-color: $back;
+            border-radius: 15%;
+        }
+    }
+}

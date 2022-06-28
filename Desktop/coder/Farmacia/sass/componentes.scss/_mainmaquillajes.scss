@@ -1,0 +1,78 @@
+#mainma {
+    .navpp {
+        @extend .navp;
+
+        .nav-link {
+            color: $letrasprincipales;
+            font-weight: bold;
+            font-size: x-large;
+            text-align: justify;
+            text-decoration: none;
+            margin: 7px 12px 17px 6px;
+            padding: 10px 12px 10px 65px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around
+        }
+    }
+
+    .divv {
+        .maquillajesc {
+            color: $letrasprincipales;
+            font-family: Verdana, Tahoma, sans-serif;
+            padding-left: 8px;
+            margin: 4px;
+            display: inline-table;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        @mixin card ($width, $height) {
+            height: $height;
+            width: $width;
+        }
+
+        .maquillajesc {
+            @include card(250px, 370px);
+        }
+
+    }
+
+    h2 {}
+
+    img {}
+
+    p {}
+
+}
+
+.marcasdestacadasm {
+    color: $blanco;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(122, 122, 216);
+    grid-area: sub;
+
+}
+
+.divmarcas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    grid-area: marcas;
+
+    .marcas {
+        padding-top: 3px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 180px;
+        height: 180px;
+
+    }
+
+    &:hover {}
+
+}

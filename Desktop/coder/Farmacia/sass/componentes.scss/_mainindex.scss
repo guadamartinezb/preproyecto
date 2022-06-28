@@ -1,0 +1,80 @@
+main {
+    #grid {
+        .navp {
+            background-color: $back;
+            grid-area: menu;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: row;
+            background-image: $gradientenav;
+
+            a {
+              @extend .nav-link; 
+            }
+        }
+    }
+
+    .novedades {
+        color: $blanco;
+        text-align: center;
+        font-size: 40px;
+        background-color: $fondomarcas;
+        padding-left: 18px;
+        padding-right: 18px;
+        grid-area: novedades;
+
+    }
+
+        .w-100 {
+        width: 80%!important;
+        padding-left: 50px;
+    
+    }
+
+    .mapayform {
+        display: grid;
+        grid-template-areas: "titulo1 titulo2"
+            "mapa formulario";
+
+        .row {
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            padding-left: 3px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 4px;
+            grid-area: formulario;
+        }
+
+        .tiutloformulario {
+            grid-area: titulo2;
+            padding-left: 30px;
+        }
+
+        .titulomapa {
+            grid-area: titulo1;
+            padding-left: 8px;
+        }
+
+        iframe {
+            grid-area: mapa;
+        }
+
+        .mapa {
+            color: $letrasprincipales;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 45px;
+        }
+
+        .titulomapa .tiutloformulario {
+            color: $fondomarcas;
+            text-align: left;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: larger;
+            margin-top: 5px;
+        }
+    }
+}

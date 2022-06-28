@@ -1,0 +1,22 @@
+.main {
+       
+    .navp {
+        background-color: $back;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-image: $gradientenav;
+        
+        a { 
+        @extend .nav-link;         
+        }
+    }
+
+    div {
+        .principal { 
+            @extend .maquillajesc ;
+           
+        }
+    }
+}
